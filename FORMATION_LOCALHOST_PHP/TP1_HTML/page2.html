@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+</head>
+<body>
+
+    <style>
+        /* table{
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+        td,tr{
+            border: 1px solid black;
+        }
+        table:first-child{
+            width: 80%;
+        }
+        #t1{
+            width: 80%;
+        }
+        #t2{
+            width: 70%;
+        }
+        #t2 tr td{
+            width: 20%;
+        } */
+    </style>
+
+    <p>Voici la première partie</p>
+    <table id="t1" border="2" cellspacing="1" cellpadding="10" width="60%">
+        <tr>
+            <td width="33%">un tableau</td>
+            <td width="33%"></td>
+            <td width="33%"></td>
+        </tr>
+        <tr>
+            <td width="33%"></td>
+            <td width="33%">à 6</td>
+            <td width="33%">cases</td>
+        </tr>
+    </table>
+
+    <p><i>Voici la deuxième partie</i></p>
+
+
+    <p><font color="red">Une liste</font></p>
+    <ol>
+        <li>Premier point</li>
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        <li>2e point</li>
+        <li>3e point</li>
+        <ul>
+            <li>rubrique 1</li>
+            <li>rubrique 2</li>
+        </ul>
+    </ol>
+
+    <p><b>Voici la troisième partie :</b></p>
+
+    <table border="2">
+        <tr>
+            <td>L1C1</td>
+            <td>L1C2</td>
+            <td>L1C3</td>
+            <td colspan="2">L1C4</td>
+        </tr>
+        <tr>
+            <td rowspan="3">L2C1</td>
+            <td>L2C2</td>
+            <td rowspan="3">L2C3</td>
+            <td colspan="2">L2C4</td>
+        </tr>
+        <tr>
+            <!-- <td>L3C1</td> -->
+            <td>L3C2</td>
+            <!-- <td>L3C3</td> -->
+            <td>L3C4</td>
+            <td>L3C5</td>
+        </tr>
+        <tr>
+            <!-- <td>L4C1</td> -->
+            <td>L4C2</td>
+            <!-- <td>L4C3</td> -->
+            <td colspan="2">L4C4</td>
+        </tr>
+    </table>
+
+    <table border="2" width="80%">
+        <tr>
+            <td width="25%">a</td>
+            <td width="25%">b</td>
+            <td width="25%">c</td>
+            <td width="25%">d</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>
+                <table border="2" width="100%">
+                    <tr><td>f</td></tr>
+                    <tr><td>g</td></tr>
+                    <tr><td>h</td></tr>
+                </table>
+            </td>
+            <td></td>
+            <td>
+                <table><tr><td>p</td></tr></table>
+                <table border="2" width="100%">
+                    <tr>
+                        <td width="50%">3</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table><tr><td>s</td></tr></table>
+                <!-- <table border="2" width="100%">
+                    <tr>
+                        <td colspan="2">i</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">j</td>
+                        <td>j2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">k</td>
+                    </tr>
+                </table> -->
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

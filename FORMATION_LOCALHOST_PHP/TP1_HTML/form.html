@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" >
+        <table>
+            <tr>
+                <td><label for="pseudo">Votre pseudo :</label></td>
+                <td><input type="text" name="pseudo" id="pseudo"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Votre mot de passe: </label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="password2">Ressaisir votre mot de passe: </label></td>
+                <td><input type="password" name="password2" id="password2"></td>
+            </tr>
+            <tr>
+                <td>OS préféré: </td>
+                <td>
+                    <input type="radio" name="os" id="wxp"><label for="wxp">Windows XP</label><br>
+                    <input type="radio" name="os" id="vist"><label for="vist">Windows Vista</label><br>
+                    <input type="radio" name="os" id="mac"><label for="mac">MacOS X</label><br>
+                    <input type="radio" name="os" id="lin"><label for="lin">Linux</label><br>
+                    <input type="radio" name="os" id="aut"><label for="aut">Autre</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Vous possédez: </td>
+                <td>
+                    <input type="checkbox" name="mob" id="ord"><label for="ord">Un ordinateur de bureau</label><br>
+                    <input type="checkbox" name="mob" id="port"><label for="port">Un portable</label><br>
+                    <input type="checkbox" name="mob" id="net"><label for="net">Un netbook</label><br>
+                    <input type="checkbox" name="mob" id="tab"><label for="tab">Une tablette</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Votre profession: </td>
+                <td>
+                    <select name="prof" id="prof" multiple>
+                        <option value="chom">Chômeur</option>
+                        <option value="et">Etudiant</option>
+                        <option value="fonc">Fonctionnaire</option>
+                        <option value="priv">Privé</option>
+                        <option value="ret">Retraité</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
