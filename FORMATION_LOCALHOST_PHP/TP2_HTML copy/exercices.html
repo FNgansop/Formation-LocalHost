@@ -5,24 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercices de HTML</title>
 </head>
-<body bgcolor="#00ffff">
+<body>
 
-    <h1 align="center"><i>Corrigé des exercices de HTML</i></h1>
-    <hr width="80%" size="2">
+    <style>
 
-    <h2><i>Exercice 2</i></h2>
-    <table align="center" border="1" width="80%" cellpadding="6" cellspacing="6">
+        /* Exercice 1 */
+        body{
+            background-color: #00ffff;
+        }
+        h1{
+            text-align: center;
+            font-style: italic;
+        }
+        hr{
+            width: 80%;
+            height: 1px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2{
+            font-style: italic;
+        }
+
+        /* Exercice 2 */
+        #t2{
+            border: double 5px black;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #t2 tr:first-child td{
+            text-align: center;
+        }
+        #t2 tr:nth-child(2) td:nth-child(2){
+            text-align: center;
+        }
+        #t2 tr:nth-child(2) td:nth-child(3){
+            text-align: right;
+        }
+        #t2 tr:nth-child(3) td:nth-child(2){
+            color: red;
+        }
+        #t2 tr:nth-child(5) td:nth-child(2){
+            background-color: orange;
+        }
+        #t2 td{
+            width: 33%;
+            border: double 5px black; 
+            padding: 6px;
+        }
+
+        /* Exercice 4 */
+        #p1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #p2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #p3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+
+    </style>
+
+    <h1>Corrigé des exercices de HTML</h1>
+    <hr>
+
+    <h2>Exercice 2</h2>
+    <table id="t2">
         <tr>
-            <td colspan="3" align="center">Cette colonne occupe toute la  largeur du tableau. </td>
+            <td colspan="3">Cette colonne occupe toute la  largeur du tableau. </td>
         </tr>
         <tr>
-            <td align="left" width="33%">Alignement à gauche</td>
-            <td align="center" width="33%">Texte centré</td>
-            <td align="right" width="33%">Alignement à droite</td>
+            <td>Alignement à gauche</td>
+            <td>Texte centré</td>
+            <td>Alignement à droite</td>
         </tr>
         <tr>
             <td rowspan="2">Cette cellule occupe deux lignes</td>
-            <td><font color="red">Ecrit  en rouge</font></td>
+            <td>Ecrit  en rouge</td>
             <td></td>
         </tr>
         <tr>
@@ -31,11 +94,60 @@
         </tr>
         <tr>
             <td colspan="2">Fusion de deux cellules</td>
-            <td bgcolor="orange"></td>
+            <td></td>
         </tr>
     </table>
 
-    <h2><i>Exercice 3</i></h2>
+    <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #exo2{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border: double 5px black;
+        }
+        #exo2 div div{
+            border: double 5px black;
+            margin: 2px;
+        }
+        #exo2>div:nth-child(1){
+            text-align: center;
+        }
+        #exo2>div:nth-child(2) div{
+            width: 33%;
+            display: inline-block;
+        }
+    </style>
+
+    <div id="exo2">
+        <div><p>Cette colonne occupe toute la largeur de l'écran</p></div>
+        <div>
+            <div><p>Alignement à gauche</p></div>
+            <div><p>Texte centré</p></div>
+            <div><p>Alignement à droite</p></div>
+        </div>
+        <div>
+            <div><p>Cette cellule occupe deux lignes</p></div>
+            <div><p>Ecrit en rouge</p></div>
+            <div><p></p></div>
+        </div>        
+        <div>
+            <div><p>Je ne définis que</p></div>
+            <div><p>Deux cellules sur cette ligne</p></div>
+        </div>
+        <div>
+            <div><p>Fusion de deux cellules	</p></div>
+            <div><p></p></div>
+        </div>
+    </div> -->
+
+
+
+    <h2>Exercice 3</h2>
     <ul>
         <li>Titre 1</li>
         <li>Titre 2
@@ -57,13 +169,13 @@
         </li>
     </ul> 
 
-    <h2><i>Exercice 4</i></h2>
+    <h2>Exercice 4</h2>
 
-    <p> <font face="Comic Sans MS">J'utlise la police Comic Sans MS</font></p><br>
-    <p><font face="Arial">J'utlise la police Arial</font></p><br>
-    <p><font face="Verdana">J'utlise la police Verdana</font></p><br>
+    <p id="p1">J'utlise la police Comic Sans MS</p><br>
+    <p id="p2">J'utlise la police Arial</p><br>
+    <p id="p3">J'utlise la police Verdana</p><br>
 
-    <h2><i>Exercice 5</i></h2>
+    <h2>Exercice 5</h2>
 
     <form action="#" method="POST">
         <fieldset>
@@ -126,10 +238,10 @@
     </form>
         
 
-    <h2><i>Exercice 6</i></h2>
+    <h2>Exercice 6</h2>
     <fieldset>
         <legend>Coordonnées</legend>
-        <table width="100%">
+        <table>
             <form action="#" method="POST">
                 <tr>
                     <td><b>Civilité</b></td>
